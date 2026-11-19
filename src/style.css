@@ -240,18 +240,21 @@ button:disabled { cursor: default; opacity: 0.72; }
 
 .chapter.is-final .floating-hearts span {
   position: absolute;
-  color: rgba(174, 78, 97, 0.15);
-  font-size: 1.1rem;
+  color: rgba(215, 39, 76, 0.58);
+  font-size: 1.9rem;
   animation: float-heart 5s ease-in-out infinite;
 }
 .chapter.is-final .floating-hearts span:nth-child(1) { left: 12%; top: 22%; }
-.chapter.is-final .floating-hearts span:nth-child(2) { right: 11%; top: 31%; animation-delay: -1.7s; font-size: 0.85rem; }
-.chapter.is-final .floating-hearts span:nth-child(3) { left: 17%; bottom: 19%; animation-delay: -3.2s; font-size: 0.7rem; }
+.chapter.is-final .floating-hearts span:nth-child(2) { right: 11%; top: 31%; animation-delay: -1.7s; font-size: 1.55rem; }
+.chapter.is-final .floating-hearts span:nth-child(3) { left: 17%; bottom: 19%; animation-delay: -3.2s; font-size: 1.35rem; }
 
 @keyframes float-heart { 50% { transform: translateY(-8px) scale(1.06); opacity: 0.65; } }
 
 .chapter.is-final .floating-hearts.heart-burst span {
+  color: #dc2450;
   opacity: 0;
+  font-size: 2.15rem;
+  text-shadow: 0 4px 12px rgba(174, 31, 68, 0.16);
   animation: fly-heart 2.8s cubic-bezier(.16,.75,.32,1) both;
 }
 
@@ -267,9 +270,9 @@ button:disabled { cursor: default; opacity: 0.72; }
 
 @keyframes fly-heart {
   0% { opacity: 0; transform: translate(0, 32px) scale(.35) rotate(-8deg); }
-  18% { opacity: .68; }
-  72% { opacity: .38; }
-  100% { opacity: 0; transform: translate(var(--fly-x), var(--fly-y)) scale(1.05) rotate(12deg); }
+  18% { opacity: .92; }
+  72% { opacity: .72; }
+  100% { opacity: 0; transform: translate(var(--fly-x), var(--fly-y)) scale(1.12) rotate(12deg); }
 }
 
 @media (max-height: 650px) {
