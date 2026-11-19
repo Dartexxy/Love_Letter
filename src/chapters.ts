@@ -11,18 +11,18 @@ export const chapters: readonly Chapter[] = [
 	warmthLevel: 1,
   },
   {
-	title: 'Vieš čo? 😆',
-	body: 'Za ten čas sme si stihli vytvoriť celkom slušnú zbierku spoločných hlúpostí. A mám pocit, že sa tá zbierka ešte poriadne rozrastie 🤣❤️',
+	title: 'Jedna vec mi už došla... 😇',
+	body: 'S tebou sa človek nikdy nenudí. Raz riešime úplné vážnosti, inokedy sa doťahujeme kvôli slovíčkam alebo úplným maličkostiam. A ja mám rád oboje. 😆❤️',
 	warmthLevel: 2,
-  },
-  {
-	title: 'Ale vieš, čo je na tom najlepšie? 😊',
-	body: 'Že sa s tebou dokážem smiať aj na úplných maličkostiach. A že aj obyčajný deň je krajší, keď si jeho súčasťou. ❤️',
-	warmthLevel: 3,
   },
   {
 	title: 'A ešte niečo... 🥰',
 	body: 'Veľmi rád počúvam, ako si sa mala. Či už máš za sebou niečo výnimočné, alebo len úplne obyčajný deň. Lebo ma zaujíma všetko, čo mi chceš porozprávať. ❤️',
+	warmthLevel: 3,
+  },
+  {
+	title: 'A potom som si niečo uvedomil... 🥰',
+	body: 'Že už dávno nie si len niekto, s kým si rád píšem. Stala si sa človekom, na ktorého sa každý deň teším. A to je naozaj krásny pocit. ❤️',
 	warmthLevel: 4,
   },
   {
@@ -36,10 +36,10 @@ export const chapters: readonly Chapter[] = [
 	warmthLevel: 6,
   },
   {
-	title: 'Ľúbim Ťa, Terezka moja. ❤️',
-	body: 'A teším sa na všetky ďalšie spoločné chvíle, malé dobrodružstvá aj úplne obyčajné dni, ktoré nás ešte čakajú. 🥰😘',
+	title: 'Ľúbim Ťa, zlatíčko moje ❤️',
+	body: 'Som naozaj šťastný, že Ťa mám. A ak je toto len začiatok nášho spoločného príbehu, tak sa nesmierne teším na všetko, čo ešte spolu zažijeme. 🥰😘❤️',
 	warmthLevel: 7,
   },
 ] as const;
 
-export const postscript = 'P.S. Toto celé som vyrobil len preto, aby som ti vyčaril úsmev. 🥰';
+export const postscript = 'P.S. Dúfam, že ti to vyčarilo úsmev 🥰';
