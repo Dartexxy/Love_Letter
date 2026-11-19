@@ -22,7 +22,7 @@ export const chapters: readonly Chapter[] = [
   },
   {
 	title: 'A potom som si niečo uvedomil... 🥰',
-	body: 'Že už dávno nie si len niekto, s kým si rád píšem. Stala si sa človekom, na ktorého sa každý deň teším. A to je naozaj krásny pocit. ❤️',
+	body: 'Že si sa za taký krátky čas stala nádhernou súčasťou môjho života. A že aj úplne obyčajný deň je krajší, keď viem, že ťa v ňom mám. ❤️',
 	warmthLevel: 4,
   },
   {
@@ -32,14 +32,14 @@ export const chapters: readonly Chapter[] = [
   },
   {
 	title: 'Vieš, čo si niekedy pomyslím? ❤️',
-	body: 'Že som naozaj rád, že sme sa vtedy v septembri našli. A že sa z jedného obyčajného rozhovoru stalo niečo také krásne. 🥹',
+	body: 'Že som naozaj rád, že sme sa vtedy v septembri našli. A že sa z jedného obyčajného rozhovoru vyvinulo niečo tak krásne. 🥹',
 	warmthLevel: 6,
   },
   {
 	title: 'Ľúbim Ťa, zlatíčko moje ❤️',
-	body: 'Som naozaj šťastný, že Ťa mám. A ak je toto len začiatok nášho spoločného príbehu, tak sa nesmierne teším na všetko, čo ešte spolu zažijeme. 🥰😘❤️',
+	body: 'Som naozaj šťastný, že Ťa mám. Nikoho lepšieho než Teba si neviem predstaviť. A nesmierne sa teším na všetko, čo ešte spolu zažijeme. 🥰😘❤️',
 	warmthLevel: 7,
   },
 ] as const;
 
-export const postscript = 'P.S. Dúfam, že ti to vyčarilo úsmev 🥰';
+export const postscript = 'P.S. Dúfam, že sa práve usmievaš, lebo pohľad na tvoj úsmev je jeden z najkrajších pohľadov na svete 🥰';
