@@ -6,6 +6,7 @@ const textElement = document.querySelector<HTMLParagraphElement>('#chapter-text'
 const postscriptElement = document.querySelector<HTMLParagraphElement>('#postscript')!;
 const chapterElement = document.querySelector<HTMLElement>('#chapter')!;
 const chapterContent = document.querySelector<HTMLElement>('#chapter-content')!;
+const floatingHearts = document.querySelector<HTMLElement>('#floating-hearts')!;
 const progressList = document.querySelector<HTMLOListElement>('#progress-list')!;
 const backButton = document.querySelector<HTMLButtonElement>('#back-button')!;
 const nextButton = document.querySelector<HTMLButtonElement>('#next-button')!;
@@ -40,7 +41,15 @@ function renderChapter(animate = false): void {
   const chapter = chapters[currentChapter];
 
   document.documentElement.dataset.warmth = String(chapter.warmthLevel);
-  chapterElement.classList.toggle('is-final', currentChapter === chapters.length - 1);
+  const isFinal = currentChapter === chapters.length - 1;
+  chapterElement.classList.toggle('is-final', isFinal);
+  floatingHearts.classList.remove('heart-burst');
+
+  if (isFinal && animate) {
+    void floatingHearts.offsetWidth;
+    floatingHearts.classList.add('heart-burst');
+  }
+
   titleElement.textContent = chapter.title;
   textElement.textContent = chapter.body;
   postscriptElement.hidden = true;

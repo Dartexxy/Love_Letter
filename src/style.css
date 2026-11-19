@@ -37,30 +37,30 @@
 }
 
 :root[data-warmth="5"] {
-  --page-bg: #fdf0ef;
-  --card-bg: rgba(255, 249, 248, 0.96);
+  --page-bg: #faeeee;
+  --card-bg: rgba(255, 248, 247, 0.96);
   --accent: #b25769;
   --accent-strong: #994656;
-  --accent-soft: #efc8cf;
-  --progress: #dfb1b8;
+  --accent-soft: #efc4cb;
+  --progress: #dcabb2;
 }
 
 :root[data-warmth="6"] {
-  --page-bg: #fcebed;
-  --card-bg: rgba(255, 248, 248, 0.96);
+  --page-bg: #f8e4e8;
+  --card-bg: rgba(255, 246, 247, 0.97);
   --accent: #a94d60;
   --accent-strong: #8e4051;
-  --accent-soft: #ecc0c8;
-  --progress: #ddaab2;
+  --accent-soft: #eab8c2;
+  --progress: #d99aa6;
 }
 
 :root[data-warmth="7"] {
-  --page-bg: #fae6e9;
-  --card-bg: rgba(255, 247, 247, 0.97);
+  --page-bg: #f4dce2;
+  --card-bg: rgba(255, 245, 247, 0.98);
   --accent: #a6465a;
   --accent-strong: #84384a;
-  --accent-soft: #ecc0c9;
-  --progress: #d99ca7;
+  --accent-soft: #e7adb9;
+  --progress: #d58e9d;
 }
 
 * { box-sizing: border-box; }
@@ -72,7 +72,7 @@ body {
   min-height: 100dvh;
   margin: 0;
   background: radial-gradient(circle at 50% 0%, rgba(255,255,255,.72), transparent 42%), var(--page-bg);
-  transition: background-color 900ms ease;
+  transition: background 900ms ease;
 }
 
 button, input { font: inherit; }
@@ -249,6 +249,28 @@ button:disabled { cursor: default; opacity: 0.72; }
 .chapter.is-final .floating-hearts span:nth-child(3) { left: 17%; bottom: 19%; animation-delay: -3.2s; font-size: 0.7rem; }
 
 @keyframes float-heart { 50% { transform: translateY(-8px) scale(1.06); opacity: 0.65; } }
+
+.chapter.is-final .floating-hearts.heart-burst span {
+  opacity: 0;
+  animation: fly-heart 2.8s cubic-bezier(.16,.75,.32,1) both;
+}
+
+.chapter.is-final .floating-hearts.heart-burst span:nth-child(1) { left: 8%; top: 73%; --fly-x: 18px; --fly-y: -210px; animation-delay: 0ms; }
+.chapter.is-final .floating-hearts.heart-burst span:nth-child(2) { left: 18%; top: 82%; --fly-x: -10px; --fly-y: -260px; animation-delay: 180ms; }
+.chapter.is-final .floating-hearts.heart-burst span:nth-child(3) { left: 28%; top: 76%; --fly-x: 24px; --fly-y: -230px; animation-delay: 90ms; }
+.chapter.is-final .floating-hearts.heart-burst span:nth-child(4) { left: 38%; top: 86%; --fly-x: -18px; --fly-y: -280px; animation-delay: 260ms; }
+.chapter.is-final .floating-hearts.heart-burst span:nth-child(5) { left: 50%; top: 78%; --fly-x: 12px; --fly-y: -250px; animation-delay: 120ms; }
+.chapter.is-final .floating-hearts.heart-burst span:nth-child(6) { left: 60%; top: 84%; --fly-x: 20px; --fly-y: -270px; animation-delay: 320ms; }
+.chapter.is-final .floating-hearts.heart-burst span:nth-child(7) { left: 70%; top: 74%; --fly-x: -16px; --fly-y: -220px; animation-delay: 220ms; }
+.chapter.is-final .floating-hearts.heart-burst span:nth-child(8) { left: 80%; top: 82%; --fly-x: 16px; --fly-y: -250px; animation-delay: 40ms; }
+.chapter.is-final .floating-hearts.heart-burst span:nth-child(9) { left: 88%; top: 70%; --fly-x: -24px; --fly-y: -205px; animation-delay: 290ms; }
+
+@keyframes fly-heart {
+  0% { opacity: 0; transform: translate(0, 32px) scale(.35) rotate(-8deg); }
+  18% { opacity: .68; }
+  72% { opacity: .38; }
+  100% { opacity: 0; transform: translate(var(--fly-x), var(--fly-y)) scale(1.05) rotate(12deg); }
+}
 
 @media (max-height: 650px) {
   .page-shell { padding-block: 10px; }
