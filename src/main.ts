@@ -72,7 +72,7 @@ function renderChapter(animate = false): void {
 	postscriptTimer = window.setTimeout(() => {
 	  postscriptElement.hidden = false;
 	  requestAnimationFrame(() => postscriptElement.classList.add('is-visible'));
-	}, 6000);
+	}, 5000);
   }
 }
 
